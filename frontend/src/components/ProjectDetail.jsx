@@ -11,7 +11,7 @@ const ProjectDetail = () => {
   useEffect(() => {
     const fetchProjectDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/items/${projectId}`);
+        const response = await axios.get(`https://myportfolio-backend-f448.onrender.com/api/items/${projectId}`);
         setProject(response.data);
         setLoading(false);
       } catch (err) {
@@ -36,7 +36,7 @@ const ProjectDetail = () => {
       {project && (
         <>
           <h2>{project.title}</h2>
-          <img src={`http://localhost:5000/uploads/${project.image}`} alt={project.title} />
+          <img src={`https://myportfolio-backend-f448.onrender.com/uploads/${project.image}`} alt={project.title} />
           <p>{project.description}</p>
           {/* Add more details about the project as needed */}
         </>
