@@ -11,7 +11,7 @@ const Testimonials = () => {
 
   // Fetch testimonials from the backend
   useEffect(() => {
-    fetch('http://localhost:5000/api/testimonials')
+    fetch('https://myportfolio-backend-f448.onrender.com/api/testimonials')
       .then(response => response.json())
       .then(data => setTestimonials(data))
       .catch(error => console.error("Error fetching testimonials:", error));
