@@ -38,7 +38,7 @@ const Testimonials = () => {
       message: newMessage,
     };
 
-    fetch('http://localhost:5000/api/testimonials', {
+    fetch('https://myportfolio-backend-f448.onrender.com/api/testimonials', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
