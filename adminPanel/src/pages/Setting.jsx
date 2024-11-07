@@ -26,7 +26,7 @@ function Setting() {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/items/${id}`);
+      await axios.delete(`https://myportfolio-backend-f448.onrender.com/api/items/${id}`);
       setItems(items.filter(item => item._id !== id)); 
     } catch (error) {
       console.error('Error deleting item:', error);
