@@ -1,0 +1,23 @@
+/* src/components/Carousel.css */
+.carousel {
+    position: relative;
+    width: 100%;
+    min-height: 500px; /* Adjust based on content */
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  .carousel .control-dots{
+    background-color: none;
+  }
+  

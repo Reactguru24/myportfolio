@@ -1,0 +1,52 @@
+/* src/App.css */
+/* Smooth scrolling for the whole document */
+html {
+  scroll-behavior: smooth;
+}
+
+*{
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+ background-color: black;
+  color: white;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #007BFF; /* Primary link color */
+}
+
+a:hover {
+  color: #0056b3; /* Darker shade on hover */
+}
+/* Example media queries for responsiveness */
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .ads-sidebar {
+    display: none; /* Hide ads on mobile if needed */
+  }
+
+  .carousel {
+    height: 200px; /* Adjust height on smaller screens */
+  }
+
+  .work-gallery {
+    grid-template-columns: 1fr; /* Stack items on mobile */
+  }
+}

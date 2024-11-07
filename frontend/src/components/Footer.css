@@ -1,0 +1,39 @@
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+  width: 100%;
+  max-width: 1000px; /* Maximum width for larger screens */
+  margin: 0 auto; /* Center the footer */
+}
+
+.footer a {
+  color: white;
+  margin: 0 0.5rem;
+}
+
+.footer a:hover {
+  color: #ffcc00; /* Gold color on hover */
+}
+
+/* Media query for screens below 768px */
+@media (max-width: 768px) {
+  .footer {
+    max-width: 90%; /* Reduce width */
+  }
+}
+
+/* Media query for screens below 576px */
+@media (max-width: 576px) {
+  .footer {
+    max-width: 80%; /* Reduce width even further */
+    font-size: 0.9rem; /* Reduce font size */
+    padding: 0.5rem;   /* Reduce padding */
+  }
+
+  .footer a {
+    margin: 0 0.25rem; /* Reduce link spacing */
+  }
+}

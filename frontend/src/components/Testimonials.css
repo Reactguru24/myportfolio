@@ -1,0 +1,111 @@
+.testimonials {
+    padding: 2rem;
+    max-width: 100%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Default to responsive grid */
+    gap: 1rem;
+}
+
+.testimonial-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.message {
+    font-style: italic;
+    color: white;
+}
+
+/* Testimonial input styles */
+.testimonial-input {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 400px;
+    margin: auto;
+}
+
+input[type="text"],
+textarea {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Tab buttons styles */
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.success-message {
+    color: green;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+
+.tab-buttons button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border: none;
+    background-color: #f0f0f0;
+    color: black;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.tab-buttons button.active,
+.tab-buttons button:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Media query for responsive design */
+@media (max-width: 700px) {
+    .testimonial-list {
+        grid-template-columns: 1fr; /* Display one testimonial per row */
+    }
+}

@@ -1,0 +1,97 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+    position: relative;
+}
+
+.logo {
+    height: 50px;
+}
+
+.menu-icon {
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+}
+
+/* Full-screen overlay for background effect */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+/* Sidebar styles for screens below 800px */
+.nav-links {
+    list-style: none;
+    position: fixed;
+    top: 0;
+    left: -100%; /* Initially off-screen */
+    height: 100vh;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-left: 20px;
+    transition: left 0.3s ease;
+    z-index: 2; /* Above overlay */
+}
+
+.nav-links.open {
+    left: 0; /* Slide in from the left */
+}
+
+.nav-links li {
+    margin: 20px 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffa500;
+}
+
+/* Styles for screens above 800px */
+@media (min-width: 801px) {
+    /* Hide sidebar and overlay */
+    .menu-icon,
+    .overlay {
+        display: none;
+    }
+
+    /* Display nav links horizontally */
+    .nav-links {
+        position: static;
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .nav-links li {
+        margin: 0;
+    }
+
+    .nav-links a {
+        color: #fff;
+        font-size: 16px;
+    }
+}

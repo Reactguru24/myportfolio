@@ -1,0 +1,101 @@
+/* src/components/MainLayout.css */
+.app {
+    display: flex; /* Ensure the app uses flexbox */
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.subNavbar {
+    display: flex; /* Use flexbox to align children side by side */
+    justify-content: space-between; /* Space items evenly */
+    padding: 1rem; /* Add padding for better spacing */
+}
+
+.portfolio-info,
+.portfolio-carousel {
+    flex: 1; /* Allow each item to take equal space */
+    margin-right: 1rem; /* Space between the two items */
+}
+
+
+.portfolio-carousel {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+.content {
+    display: flex; /* Use flexbox for the content section */
+    flex: 1; /* Ensures this section takes full height */
+    padding: 1rem;
+    gap: 1rem; /* Space between columns */
+    max-width: 1300px;
+    margin: auto;
+}
+
+main {
+    flex: 3; /* Main content takes more space */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 2rem; /* Space between WorkGallery and Testimonials */
+}
+
+.ads-sidebar {
+    flex: 1; /* Sidebar takes equal space */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .carousel img{
+        height: 500px;
+    }
+    
+    .portfolio-info,
+    .portfolio-carousel {
+        margin-right: 0; /* Remove margin on smaller screens */
+        margin-bottom: 1rem; /* Add spacing between stacked items */
+    }
+}
+
+@media (max-width: 900px) {
+
+    .carousel img{
+        height: 500px;
+    }
+
+    .content {
+        flex-direction: column; /* Stack the content vertically */
+    }
+
+    .ads-sidebar {
+        flex: 1 1 100%; /* Allow the sidebar to take full width on smaller screens */
+        margin-bottom: 1rem; /* Add spacing below sidebar */
+    }
+
+    main {
+        flex: 1; /* Main content takes remaining space */
+    }
+}
+
+@media (max-width: 768px) {
+    .ads-sidebar {
+        padding: 0.5rem; /* Reduce padding for smaller screens */
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+
+    .portfolio-info h2,
+    .portfolio-carousel {
+        font-size: 0.85rem; /* Adjust font size for smaller screens */
+    }
+    .portfolio-info h1{
+        font-size: 1 rem;
+
+    }
+    .subNavbar{
+        display: block;
+    }
+
+    main {
+        gap: 1rem; /* Reduce gap between WorkGallery and Testimonials */
+    }
+}

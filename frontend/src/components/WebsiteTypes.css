@@ -1,0 +1,82 @@
+/* Main container for the component */
+.website-types {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Centered wrapper with max-width constraint */
+.website-types-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* Grid container for website cards */
+.website-types-scrollable {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3 columns */
+  gap: 20px; /* Space between cards */
+  padding: 1rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card styling */
+.website-card {
+ 
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  transition: transform 0.2s ease;
+}
+
+.website-card:hover {
+  transform: translateY(-5px);
+}
+
+.website-card h3 {
+  font-size: 1.25rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.website-card p,
+.website-card ul {
+  font-size: 1rem;
+  color: white;
+}
+
+.website-card ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+/* src/components/WebsiteTypes.css */
+.view-more-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.view-more-btn:hover {
+  background-color: #0056b3;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .website-types-scrollable {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .website-types-scrollable {
+      grid-template-columns: 1fr; /* 1 column on small screens */
+  }
+}

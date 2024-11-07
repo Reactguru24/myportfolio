@@ -1,0 +1,78 @@
+/* General Styling for .portfolio-info */
+.portfolio-info {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 100%; /* Set max-width */
+    width: 80%; /* Default width */
+   
+}
+
+/* Gradient Heading Styling */
+.portfolio-info h1, 
+.portfolio-info h2, 
+.portfolio-info h3, 
+.portfolio-info h4, 
+.portfolio-info h5, 
+.portfolio-info h6 {
+    margin: 0.5rem 0;
+    background: linear-gradient(90deg, #ff0080, #ffcd00, #00ff7f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Responsive Font Sizes */
+.portfolio-info h1 {
+    font-size: 3.5vw;
+}
+
+.portfolio-info h2 {
+    font-size: 2.5vw;
+}
+
+.portfolio-info h3,
+.portfolio-info h4,
+.portfolio-info h5,
+.portfolio-info h6 {
+    font-size: 1.5vw;
+}
+
+/* Adjustments for Medium Screens */
+@media (max-width: 768px) {
+    .portfolio-info h1 {
+        font-size: 2rem;
+    }
+
+    .portfolio-info h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Hide less important headers */
+    .portfolio-info h3,
+    .portfolio-info h4,
+    .portfolio-info h5,
+    .portfolio-info h6 {
+        display: none;
+    }
+
+    .portfolio-info {
+        padding: 1.5rem;
+        width: 90%; /* Increase width slightly */
+    }
+}
+
+/* Adjustments for Small Screens */
+@media (max-width: 600px) {
+    .portfolio-info h1 {
+        font-size: 1.5rem;
+    }
+
+    .portfolio-info h2 {
+        font-size: 1.25rem;
+    }
+
+    .portfolio-info {
+        padding: 1rem;
+        width: 95%; /* Full-width on very small screens */
+    }
+}
