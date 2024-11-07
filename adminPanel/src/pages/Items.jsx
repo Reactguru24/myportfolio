@@ -51,7 +51,7 @@ function Items() {
     formDataToSend.append('title', formData.title); // Append title to the form data
 
     try {
-      const response = await axios.post('http://localhost:5000/api/items', formDataToSend, {
+      const response = await axios.post('https://myportfolio-backend-f448.onrender.com/api/items', formDataToSend, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
