@@ -39,7 +39,7 @@ const WorkGallery = () => {
         {projects.map((project) => (
           <div className="project-card" key={project._id}>
             <Link to={`/projects/${project._id}`}>
-              <img src={`http://localhost:5000/uploads/${project.image}`} alt={project.title} />
+              <img src={`https://myportfolio-backend-f448.onrender.com/uploads/${project.image}`} alt={project.title} />
               <h3>{project.title}</h3>
               <p>{project.description}</p>
             </Link>
