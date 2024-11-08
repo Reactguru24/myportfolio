@@ -14,7 +14,7 @@ function Setting() {
   useEffect(() => {
     const fetchItems = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/items');
+        const response = await axios.get('https://myportfolio-backend-f448.onrender.com/api/items');
         setItems(response.data);
       } catch (error) {
         console.error('Error fetching items:', error);
