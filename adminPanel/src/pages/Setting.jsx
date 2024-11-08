@@ -57,7 +57,7 @@ function Setting() {
     if (editedImage) formData.append('image', editedImage);
   
     try {
-      const response = await axios.put(`http://localhost:5000/api/items/${id}`, formData, {
+      const response = await axios.put(`https://myportfolio-backend-f448.onrender.com/api/items/${id}`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
