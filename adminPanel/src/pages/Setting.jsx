@@ -99,7 +99,7 @@ function Setting() {
           {items.map((item) => (
             <li key={item._id} className="item">
               <img
-                src={`http://localhost:5000/uploads/${item.image}`}
+                src={`https://myportfolio-backend-f448.onrender.com/uploads/${item.image}`}
                 alt={item.description}
                 className="item-image"
               />
