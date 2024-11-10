@@ -1,0 +1,173 @@
+/* Project Detail Layout */
+.project-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 70px;
+}
+
+/* Side Images Section */
+.side-images {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.side-image {
+  width: 80px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.side-image:hover {
+  transform: scale(1.05);
+}
+
+/* Main Image Section */
+.main-image {
+  flex-shrink: 0;
+  max-width: 500px;
+  max-height: 750px; /* Adjusted max-height for larger images */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: px; /* Add top margin to separate from side images */
+}
+
+.main-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Ensure the image fits inside the container without stretching */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Information Section */
+.project-info {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  
+}
+
+.project-info h2 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.project-info .label {
+  font-weight: bold;
+}
+
+.project-info a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.project-info a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries */
+
+/* Medium screens: Stack sections vertically */
+@media (max-width: 1024px) {
+  .project-detail {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .side-images {
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 10px; /* Separate side images from main image */
+  }
+
+  .side-image {
+    width: 110px;
+    object-fit: cover;
+  }
+
+  .main-image {
+    max-width: 500px;
+    max-height: 750px; /* Maintain max-height for large images on medium screens */
+  }
+
+  .project-info {
+    max-width: 90%;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+/* Small screens: further reduce image sizes and prevent overlap */
+@media (max-width: 768px) {
+  .side-images {
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .side-image {
+    width: 60px;
+  }
+
+  .main-image {
+    max-width: 300px;
+    max-height: 750px; /* Keep max-height of 750px for consistency */
+  }
+
+  .project-info {
+    padding: 5px;
+  }
+
+  .project-info h2 {
+    font-size: 15px;
+  }
+}
+
+/* Extra small screens: ensure readability and prevent overlap */
+@media (max-width: 480px) {
+  .project-detail {
+    padding: 10px;
+  }
+
+  .side-images {
+    flex-direction: row;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 10px; /* Ensure separation from main image */
+  }
+
+  .side-image {
+    width: 50px;
+  }
+
+  .main-image {
+    max-width: 250px;
+    max-height: 750px; /* Ensure that the image height does not exceed 750px */
+    margin-top: 0; /* Remove margin to better fit the small screen */
+  }
+
+  .project-info {
+    max-width: 100%;
+    padding: 5px;
+    text-align: left;
+  }
+
+  .project-info h2 {
+    font-size: 14px;
+  }
+
+  .project-info a {
+    font-size: 14px;
+  }
+}

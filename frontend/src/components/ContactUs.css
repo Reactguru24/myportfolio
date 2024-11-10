@@ -1,0 +1,30 @@
+/* src/components/ContactUs.css */
+.contact-us {
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-us h2 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.contact-details p {
+    font-size: 1.1rem;
+    color: white;
+    margin: 0.5rem 0;
+}
+
+.contact-details a {
+    color: #0066cc;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    font-weight: bold;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}

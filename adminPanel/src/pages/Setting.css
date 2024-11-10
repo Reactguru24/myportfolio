@@ -1,0 +1,151 @@
+/* Default Styles */
+.setting-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.items-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.item-image {
+  max-width: 150px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.item-details {
+  flex: 1;
+}
+
+.item-details p {
+  margin: 5px 0;
+}
+.edit-btn{
+  background-color: rgb(31, 167, 31);
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.delete-btn {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.delete-btn:hover {
+  background-color: #e60000;
+}
+
+/* Responsive Adjustments */
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+  .setting-page {
+      padding: 15px;
+      max-width: 900px;
+  }
+
+  h2 {
+      font-size: 1.8rem;
+  }
+
+  h3 {
+      font-size: 1.4rem;
+  }
+
+  .item {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .item-image {
+      max-width: 120px;
+      margin-bottom: 15px;
+  }
+}
+
+/* Small screens (large mobile) */
+@media (max-width: 768px) {
+  .setting-page {
+      padding: 10px;
+      max-width: 600px;
+  }
+
+  h2 {
+      font-size: 1.6rem;
+  }
+
+  h3 {
+      font-size: 1.2rem;
+  }
+
+  .item-image {
+      max-width: 100px;
+  }
+
+  .delete-btn {
+      padding: 6px 10px;
+      font-size: 0.9rem;
+  }
+}
+
+/* Extra-small screens (mobile) */
+@media (max-width: 480px) {
+  .setting-page {
+      padding: 8px;
+      max-width: 100%;
+  }
+
+  h2 {
+      font-size: 1.4rem;
+  }
+
+  h3 {
+      font-size: 1.1rem;
+  }
+
+  .item {
+      padding: 8px;
+  }
+
+  .item-image {
+      max-width: 80px;
+  }
+
+  .delete-btn {
+      padding: 5px 8px;
+      font-size: 0.8rem;
+  }
+}

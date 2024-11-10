@@ -1,0 +1,89 @@
+/* Sidebar.css */
+
+/* Sidebar container */
+.sidebar-container {
+    display: flex;
+  }
+  
+  /* Sidebar fixed on the left */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    padding-top: 20px;
+    transition: width 0.3s ease;
+    overflow-y: auto;
+    z-index: 1; /* Ensure sidebar is on top */
+  }
+  
+  /* Sidebar menu styling */
+  .sidebar h2 {
+    text-align: center;
+    color: white;
+  }
+  
+  .sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu-item {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .menu-item.active {
+    background-color: #4CAF50; /* Active tab highlight */
+    color: white;
+  }
+  
+  .sidebar-signin {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .sidebar-user {
+    padding: 10px;
+    background-color: #444;
+    text-align: center;
+    color: white;
+  }
+  
+  .sidebar-menu li a {
+    text-decoration: none;
+    color: white;
+  }
+
+.sidebar-footer {
+    margin-top: auto; /* Push the footer to the bottom */
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  .sidebar-footer p {
+    margin-bottom: 0.5rem;
+  }
+  
+  .sidebar-signout {
+    cursor: pointer;
+    color: white;
+  }
+  
+  /* Main content area on the right */
+  .main-content {
+    margin-left: 250px;  /* Sidebar width */
+    padding: 20px;
+    width: calc(100% - 250px); /* Subtract sidebar width */
+    min-height: 100vh;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  

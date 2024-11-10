@@ -1,0 +1,10 @@
+/* SocialMediaLinks.css */
+.social-media a {
+    font-size: 2rem; /* Adjust the size as needed */
+    margin: 0 10px;  /* Optional: Add spacing between icons */
+  }
+  
+  .social-media a:hover {
+    color: #0077b5; /* Optional: Add a hover effect */
+  }
+  

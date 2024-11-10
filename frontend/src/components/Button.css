@@ -1,0 +1,36 @@
+/* src/components/Button.css */
+.btn {
+    display: inline-block; /* Ensure the button can have padding */
+    padding: 10px; /* Add padding for a comfortable click area */
+    font-size: 1rem; /* Set a base font size */
+    font-weight: bold; /* Make the text bold */
+    color: #fff; /* White text color */
+    background-color: #007bff; /* Bootstrap primary color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions for background and scale */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline for anchor buttons */
+}
+
+.btn:hover {
+    background-color: #000000; /* Darken background on hover */
+}
+
+.btn:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(10, 12, 15, 0.5); /* Add a custom focus ring */
+}
+
+.btn:active {
+    transform: scale(0.98); /* Slightly shrink the button when clicked */
+}
+
+.btn.secondary {
+    background-color: #6c757d; /* Secondary color */
+}
+
+.btn.secondary:hover {
+    background-color: #5a6268; /* Darken secondary color on hover */
+}
